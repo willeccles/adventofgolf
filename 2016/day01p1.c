@@ -1,8 +1,1 @@
-/* WIP */
-t,v;main(d,n){
-  for(;scanf("%lc%d, ",&d,&n)&&d>75;) {
-    t+=(v=v+~d&3)<2?n:-n;
-    printf("%lc%d: v=%d, t=%d\n", d, n, v, t);
-  }
-  printf("%d\n", abs(t));
-}
+x,y,v;main(d,n){for(;scanf("%lc%d, ",&d,&n)&&d>75;)*((v=v+~d&3)&1?&x:&y)+=(v>1?-n:n);printf("%d",abs(x)+abs(y));}
